@@ -1,0 +1,7 @@
+.header-logo {
+  width: 120px;
+  height: 45px;
+}
+.header-char-epis {
+  background-color: var(--background-color-dark);
+}

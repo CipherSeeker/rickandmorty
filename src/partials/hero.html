@@ -1,0 +1,63 @@
+<section class="hero" id="hero">
+  <div class="container hero-container">
+    <h1 class="visually-hidden">Rick and Morty</h1>
+    <div class="hero-images">
+      <picture class="hero-img">
+        <source
+          srcset="
+            ./img/header-hero/hero-hero-desktop@1x.png 1x,
+            ./img/header-hero/hero-hero-desktop@2x.png 2x
+          "
+          media="(min-width: 1440px)" />
+        <source
+          srcset="
+            ./img/header-hero/hero-hero-tablet@1x.png 1x,
+            ./img/header-hero/hero-hero-tablet@2x.png 2x
+          "
+          media="(min-width: 768px)" />
+        <source
+          srcset="
+            ./img/header-hero/hero-hero-mobile@1x.png 1x,
+            ./img/header-hero/hero-hero-mobile@2x.png 2x
+          "
+          media="(max-width: 767px)" />
+        <img src="./img/header-hero/hero-hero-desktop@1x.png" alt="cosmo-car"
+      /></picture>
+      <picture class="hero-logo">
+        <source
+          srcset="
+            ./img/header-hero/logo-hero-desktop@1x.png 1x,
+            ./img/header-hero/logo-hero-desktop@2x.png 2x
+          "
+          media="(min-width: 1440px)" />
+        <source
+          srcset="
+            ./img/header-hero/logo-hero-tablet@1x.png 1x,
+            ./img/header-hero/logo-hero-tablet@2x.png 2x
+          "
+          media="(min-width: 768px)" />
+        <source
+          srcset="
+            ./img/header-hero/logo-hero-mobile@1x.png 1x,
+            ./img/header-hero/logo-hero-mobile@2x.png 2x
+          "
+          media="(max-width: 767px)" />
+        <img src="./img/header-hero/logo-hero-desktop@1x.png" alt="logo"
+      /></picture>
+    </div>
+    <p class="hero-text">
+      If you're a fan of Rick and Morty, you don't want to miss out on our app!
+      Start exploring the endless possibilities of Rick and Morty!
+    </p>
+    <button class="hero-btn hero-btn-down" type="button">
+      <svg class="hero-icon">
+        <use href="./img/symbol-defs.svg#icon-Vector-5"></use>
+      </svg>
+    </button>
+    <button class="hero-btn hero-btn-rotate is-hidden" type="button">
+      <svg class="hero-icon">
+        <use href="./img/symbol-defs.svg#icon-Vector-5"></use>
+      </svg>
+    </button>
+  </div>
+</section>

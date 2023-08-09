@@ -1,0 +1,329 @@
+@media (max-width: 335px) {
+  .modal-popchar {
+    max-width: 100%;
+    box-sizing: border-box; /* Это свойство убедится, что padding не добавляет дополнительную ширину к элементу */
+  }
+  .modal-popchar .status-list {
+    width: 100%;
+  }
+  .popchar-episodes-list .popchar-episodes-item {
+    min-width: 100%;
+  }
+  .popchar-episodes-list {
+    min-width: 100%;
+  }
+}
+.backdrop-popchar {
+  z-index: 100;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-popchar {
+  width: 335px;
+  height: 993px;
+  padding: 40px 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background: var(--background-color-dark);
+  border-radius: 18px;
+}
+.modal-popchar:not(.is-hidden) {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popchar-close-btn {
+  display: flex;
+  margin-top: -26px;
+  margin-bottom: 6px;
+  margin-right: -6px;
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
+  background-color: var(--background-color-dark);
+  padding: 0;
+  border: none;
+}
+
+.icon-close {
+  width: 20px;
+  height: 20px;
+}
+
+.heroes-episode-img {
+  width: 295px;
+  height: 295px;
+  border: 2px solid var(--first-color-accent);
+  border-radius: 18px;
+}
+
+.modal-title {
+  width: 84px;
+  height: 24px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  color: var(--background-color-light);
+}
+
+.popchar-episodes-list {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 376px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.popchar-episodes-list::-webkit-scrollbar {
+  width: 0;
+  background-color: transparent;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.popchar-episodes-item {
+  display: flex;
+
+  padding: 14px;
+  min-width: 295px;
+  max-height: 64px;
+  border: 2px solid var(--first-color-accent);
+  border-radius: 18px;
+}
+.episode-name-title {
+  font-weight: 600;
+  font-size: 16px;
+
+  display: block;
+  color: var(--first-color-accent);
+  max-width: 72px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.episode-name-title:hover {
+  text-overflow: clip;
+  overflow: auto;
+  white-space: normal;
+}
+
+.episode-name-title::-webkit-scrollbar {
+  display: none;
+}
+.season-count,
+.air-data {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.season-count span:nth-child(2),
+.air-data span:nth-child(2) {
+  font-weight: 400;
+  font-size: 14px;
+
+  color: var(--background-color-light);
+}
+
+.status-list {
+  margin-top: 14px;
+  border: 2px solid var(--first-color-accent);
+  border-radius: 18px;
+  width: 295px;
+  height: 160px;
+  padding: 20px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.status-list-top {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 16px;
+  justify-content: space-between;
+}
+.status-list-top .status-item .status-value {
+  max-width: 61px;
+}
+.status-list-buttom {
+  display: flex;
+  gap: 14px;
+  justify-content: flex-start;
+}
+
+.status-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.status-item .status-key {
+  font-weight: 400;
+  font-size: 12px;
+
+  display: flex;
+  align-items: center;
+  color: var(--second-text-color-lighr);
+  margin-bottom: 8px;
+}
+
+.status-item .status-value {
+  font-weight: 400;
+  font-size: 14px;
+
+  display: block;
+
+  color: var(--background-color-light);
+  max-width: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.status-item .status-value:hover {
+  z-index: 10000;
+  text-overflow: clip;
+  overflow: auto;
+  white-space: normal;
+  max-height: 20px;
+  max-width: 80px;
+}
+.status-item .status-value::-webkit-scrollbar {
+  display: none;
+}
+.season-data {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.season-count span,
+.air-data span {
+  font-weight: 400;
+  font-size: 12px;
+
+  display: flex;
+  align-items: center;
+  color: var(--second-text-color-lighr);
+}
+
+.season-count span:nth-child(2),
+.air-data span:nth-child(2) {
+  font-size: 14px;
+
+  color: var(--background-color-light);
+}
+@media (max-width: 768px) {
+  .status-list-top {
+    min-width: 255px;
+  }
+  .status-value.episodes-count {
+    max-width: 54px;
+    text-overflow: ellipsis;
+  }
+}
+/*! =========================TABLET==================== */
+@media (min-width: 768px) {
+  .modal-popchar {
+    width: 702px;
+    height: 510px;
+    padding: 32px;
+  }
+
+  .popchar-close-btn {
+    margin-top: -18px;
+    margin-right: -18px;
+    margin-bottom: 0;
+
+    width: 22px;
+    height: 22px;
+  }
+
+  .icon-close {
+    width: 22px;
+    height: 22px;
+  }
+
+  .heroes-episode-img {
+    width: 278px;
+    height: 292px;
+  }
+
+  .modal-title {
+    position: relative;
+    margin-left: 286px;
+    bottom: 482px;
+    width: 112px;
+    height: 28px;
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+
+  .popchar-episodes-list {
+    position: relative;
+    bottom: 476px;
+    margin-left: 284px;
+  }
+
+  .popchar-episodes-item {
+    padding: 16px;
+    min-width: 352px;
+    max-height: 68px;
+  }
+  .episode-name-title {
+    font-size: 14px;
+
+    max-width: 105px;
+  }
+
+  .status-list {
+    margin-top: 8px;
+
+    width: 278px;
+    height: 146px;
+    padding: 16px;
+  }
+  .status-list-top {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .status-list-buttom {
+    display: flex;
+    gap: 16px;
+  }
+
+  .status-item .status-value {
+    font-size: 16px;
+  }
+  .season-data {
+    gap: 14px;
+  }
+  .episod-item {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .modal-popchar {
+    width: 710px;
+  }
+  .popchar-episodes-list {
+    margin-left: 294px;
+  }
+  .modal-title {
+    margin-left: 294px;
+  }
+}
