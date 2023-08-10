@@ -2,7 +2,7 @@
 
 Welcome to the repository for the "Rick and Morty" project - an interactive platform that immerses users in the universe of the popular animated series. This dynamic site offers features like character search, episode exploration, and a random image slider for fans to dive into the world of "Rick and Morty."
 
-![Website Screenshot](screenshot.png)
+![Website Screenshot](https://github.com/CipherSeeker/rickandmorty/blob/main/Hero.avif)
 
 ## Project Overview
 
